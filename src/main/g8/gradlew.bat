@@ -64,7 +64,7 @@ goto execute
 
 :4NT_args
 @rem Get arguments from the 4NT Shell from JP Software
-set CMD_LINE_ARGS=%$
+set CMD_LINE_ARGS=%\$
 
 :execute
 @rem Setup the command line
