@@ -19,6 +19,7 @@ dependencies {
   compile "org.scala-lang:scala-library:\${scalaVersion}"
 
   testCompile "org.scalatest:scalatest_\${scalaVersion}:1.+"
+  testCompile "junit:junit:4.+"
 }
 
 task wrapper(type: Wrapper) { 
