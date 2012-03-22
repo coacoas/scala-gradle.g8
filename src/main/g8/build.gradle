@@ -1,6 +1,7 @@
 apply plugin: 'scala'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
 
-project = '$name$'
 version = '$version$'
 
 project.ext { 
@@ -8,9 +9,7 @@ project.ext {
 }
 
 repositories { 
-  maven {
-    mavenCentral()
-  }
+  mavenCentral()
 }
 
 dependencies { 
