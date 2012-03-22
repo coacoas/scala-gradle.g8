@@ -1,7 +1,6 @@
 apply plugin: 'scala'
 
 project = '$name$'
-artifact = '$artifact$'
 version = '$version$'
 
 project.ext { 
@@ -15,8 +14,12 @@ repositories {
 }
 
 dependencies { 
-  scalaTools "org.scala-lang:scala-compiler:${scalaVersion}",
-  scalaTools "org.scala-lang:scala-library:${scalaVersion}",
+  scalaTools "org.scala-lang:scala-compiler:\${scalaVersion}",
+  scalaTools "org.scala-lang:scala-library:\${scalaVersion}",
 
-  compile "org.scala-lang:scala-library:${scalaVersion}",
+  compile "org.scala-lang:scala-library:\${scalaVersion}",
+}
+
+task wrapper(type: Wrapper) { 
+  gradleVersion = '$gradle_version$'
 }
