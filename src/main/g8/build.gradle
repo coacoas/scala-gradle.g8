@@ -1,0 +1,22 @@
+apply plugin: 'scala'
+
+project = '$name$'
+artifact = '$artifact$'
+version = '$version$'
+
+project.ext { 
+  scalaVersion = "$scala_version$"
+}
+
+repositories { 
+  maven {
+    mavenCentral()
+  }
+}
+
+dependencies { 
+  scalaTools "org.scala-lang:scala-compiler:${scalaVersion}",
+  scalaTools "org.scala-lang:scala-library:${scalaVersion}",
+
+  compile "org.scala-lang:scala-library:${scalaVersion}",
+}
