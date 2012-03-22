@@ -18,7 +18,7 @@ dependencies {
 
   compile "org.scala-lang:scala-library:\${scalaVersion}"
 
-  test "org.scalatest:scalatest_\${scalaVersion}:1.+"
+  testCompile "org.scalatest:scalatest_\${scalaVersion}:1.+"
 }
 
 task wrapper(type: Wrapper) { 
