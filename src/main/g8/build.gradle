@@ -20,7 +20,3 @@ dependencies {
 
   testImplementation "org.scalatest:scalatest_\${scalaVersion}:3.0.+"
 }
-
-task wrapper(type: Wrapper) { 
-  gradleVersion = '$gradle_version$'
-}
