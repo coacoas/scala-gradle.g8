@@ -6,7 +6,7 @@ class HelloTest extends FreeSpec with Matchers {
   "Hello.hello" - {
     "should return hello + project name" in {
       import main.scala.Hello._
-      hello should be ("Hello, Scala Gradle Project")
+      hello should be ("Hello, $name$")
     }
   }
 }
