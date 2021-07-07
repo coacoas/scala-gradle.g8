@@ -1,12 +1,9 @@
 package test.scala
 
-import org.junit.runner.RunWith
-import org.scalatest.matchers.ShouldMatchers
-import org.scalatest.FreeSpec
-import org.scalatest.junit.JUnitRunner
+import org.scalatest.freespec.AnyFreeSpec
+import org.scalatest.matchers.should.Matchers
 
-@RunWith(classOf[JUnitRunner])
-class HelloTest extends FreeSpec with ShouldMatchers {
+class HelloTest extends AnyFreeSpec with Matchers {
   "Hello.hello" - {
     "should return hello + project name" in {
       import main.scala.Hello._
@@ -14,3 +11,4 @@ class HelloTest extends FreeSpec with ShouldMatchers {
     }
   }
 }
+
