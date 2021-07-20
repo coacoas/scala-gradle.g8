@@ -17,6 +17,18 @@ You can also use [Coursier][5] to install giter8.
 First install the [coursier][6] CLI tool.  Then create the `g8` executable with:
 
 ```
+coursier install giter8
+```
+
+Make sure your Coursier bin directory is on your `PATH`:
+
+```
+export PATH="$PATH:$HOME/.local/share/coursier/bin"
+```
+
+Or, if that doesn't work:
+
+```
 coursier bootstrap org.foundweekends.giter8:giter8-launcher_2.12:0.12.0 \
   --main giter8.LauncherMain -o g8 -f
 ```
